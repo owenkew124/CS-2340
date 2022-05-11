@@ -1,0 +1,9 @@
+testComputerFactoryCreatesLaptop() - Tests that the factory creates a laptop when passed as a parameter. This test helps ensure the factory pattern is correctly implemented.
+
+testComputerFactoryCreatesServer() - Tests that the factory creates a server when passed as a parameter. This test helps ensure the factory pattern is correctly implemented.
+
+testComputerFactoryCreatesWorkstation() - Tests that the factory creates a workstation when passed as a parameter. This test helps ensure the factory pattern is correctly implemented.
+
+testComputerFactoryCreatesCorrectBrand() - Test that a newly creates computer has the correct brand. This ensures the brand is stored correctly.
+
+testComputerModifiableBrand() - Test that a computer has the correct brand after modification. This ensures the setter method allows the brand to change.

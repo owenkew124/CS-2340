@@ -1,2 +1,2 @@
-# CS-2340
-Repo for the CS 2340 Objects and Design Class Tower Defense Projects
+# 2340teamsixproject
+CS-2340-Team-Six-Project-Repo

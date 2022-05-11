@@ -1,0 +1,9 @@
+testConeDescription() - Test that a newly created cone has a correct description. Since the description is custom, we want to check that it is correctly made.
+
+testConeScoops() - Test that a newly created cone has the correct number of scoops. The code analyzes the parameter to determine whether it is a single or double scoop
+
+testConeFlavor() - Test that a newly created cone has the correct flavor. The code has a different flavor based on the parameter
+
+testIceCreamMakerOne() - Test that a newly created cone with multiple toppings has the right description and total price. We want to check that the decorator system works correctly.
+
+testIceCreamMakerTwo() - Test that a newly created cone with multiple toppings has the right description and total price. The test is similar to the one before except with fewer toppings.

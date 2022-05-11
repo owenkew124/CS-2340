@@ -1,0 +1,9 @@
+testReportOne() - Tests the Report 1 method. Multiple employees are created and connected, and the report should correctly generate a list of all employees.
+
+testReportTwo() - Tests the Report 2 method. Multiple employees are created and connected, and the report should correctly generate a list of male employees with dependants.
+
+testReportThree() - Tests the Report 3 method. Multiple employees are created and connected, and the report should correctly generate a list of female employees.
+
+testReportFour() - Tests the Report 4 method. Multiple employees are created and then the method is called, finding the average salary.
+
+testEmployeeClass() - Tests the creation of a new employee and the attributes it contains. This class is important for storing employee information and for working with the data.
