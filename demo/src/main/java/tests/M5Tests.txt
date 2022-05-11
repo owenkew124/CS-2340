@@ -1,0 +1,26 @@
+M5 Testing Process
+
+testGetTargetsArray() - Checks that the getTargets() method returns an ArrayList of TileObjects. For our combat system, the towers call this method to find which enemies to act on.
+
+testFireNullTower() - Checks that a null tower cannot be fired. This test is important to ensure no errors
+
+testCombatControllerIncrementMoney() - Checks that the combat controller increments money on the correct interval.
+
+testCombatControllerDoesNotIncrementMoney() - Checks that the combat controller does not increment money when the time is not correct.
+
+testCombatControllerNewEnemy() - Checks that the combat controller creates a new enemy on the correct interval.
+
+testInteractNullTowerAndTarget() - Checks that interact() cannot be completed with a null tower and null target. This method handles combat between a tower and target and must be able to handle null parameters.
+
+testDeleteNullEnemy() - Checks that deleting a null enemy cannot be completed. This scenario should never occur, but the method must be able to handle it.
+
+testProcessNoEnemy() - Checks that no methods are called when there are no enemies and the game processes the enemies
+
+testCheckUserTryingToMinePath() - Checks that the system is alerted when a user tries to mine the path.
+
+testSetupMap() - Checks that the map is setup when the method is called.
+
+
+
+
+

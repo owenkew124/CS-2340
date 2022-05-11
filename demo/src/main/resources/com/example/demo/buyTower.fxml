@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="710.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.GameApplication">
+   <children>
+      <Button layoutX="0.0" layoutY="0.0" mnemonicParsing="false" text="Cancel Purchase" onAction="#closeTowerMenu"/>
+      <Text layoutX="120.0" layoutY="15.0" text="${'Player Money: ' + playerMoney}"/>
+      <Button layoutX="14.0" layoutY="60.0" mnemonicParsing="false" text="FireTower0" onAction="#buyTower">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FireTower0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="23.0" layoutY="308.0" mnemonicParsing="false" text="RockTower0" onAction="#buyTower">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@RockTower0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="344.0" layoutY="60.0" mnemonicParsing="false" text="IceTower0" onAction="#buyTower">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IceTower0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="355.0" layoutY="308.0" mnemonicParsing="false" text="PaperTower0" onAction="#buyTower">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PaperTower0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

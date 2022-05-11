@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="0.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameApplication">
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml">
+        <Button onAction="#startCombat" text="Start Combat!" />
+        <Button onAction="#pauseCombat" text="Pause Combat!" />
+        <Button onAction="#quit" text="Quit!" />
+        <Button onAction="#endGame" text="Forfeit" />
+        <Text text="${'Player Money: ' + playerMoney}" />
+        <Text text="${'Monument Health: ' + monumentHealth}" />
+        <Text text="Click on an empty slot (not path or monument) to open the tower purchase menu for that location." />
+        <Text text="${enemyHealthString}" />
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r0">
+        <Button onAction="#openTowerMenu" fx:id = "00">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "01">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "02">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "03">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "04">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "05">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "06">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "07">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "08">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r1">
+        <Button onAction="#openMineMenu" fx:id = "10">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "11">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p1">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "12">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p2">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "13">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p3">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "14">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p4">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "15">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p5">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "16">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p6">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "17">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p7">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="18">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r2">
+        <Button onAction="#openTowerMenu" fx:id="20">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="21">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="22">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="23">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="24">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="25">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id="26">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "27">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p8">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "28">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r3">
+        <Button onAction="#openTowerMenu" fx:id = "30">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "31">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p15">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "32">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p14">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "33">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p13">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "34">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p12">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "35">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p11">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "36">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p10">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "37">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p9">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "38">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r4">
+        <Button onAction="#openTowerMenu" fx:id = "40">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "41">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p16">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "42">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "43">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "44">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "45">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "46">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "47">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "48">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r5">
+        <Button onAction="#openTowerMenu" fx:id = "50">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "51">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p17">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "52">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p18">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "53">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p19">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "54">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p20">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "55">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p21">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "56">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p22">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openMineMenu" fx:id = "57">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p23">
+                    <Image url="@map.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "58">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <HBox spacing="0.0" xmlns:fx="http://javafx.com/fxml" fx:id = "r6">
+        <Button onAction="#openTowerMenu" fx:id = "60">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "61">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "62">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "63">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "64">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "65">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "66">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id = "67">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false" fx:id = "p24">
+                    <Image url="@monument.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button onAction="#openTowerMenu" fx:id = "68">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="false">
+                    <Image url="@emptySlot.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>

@@ -1,0 +1,21 @@
+M6 Testing Process
+
+testFinalBossNullOnInitialization() - Tests that the final boss is not spawned immediately when the game begins. For Milestone 6.
+
+testOnlyOneFinalBoss() - Tests that if a final boss has already been spawned, then another one cannot be spawned. The final boss should be the last enemy, so it should not be possible to create another final boss after one is already created. For Milestone 6.
+
+testNoFinalBossUntilLessThanMaxEnemies() - Tests that a final boss cannot be spawned while the maximum number of enemies are in the game. Since there is a limit to how many enemies can be in the game at once, the final boss should not be spawned if the number of enemies is currently at the limit. For Milestone 6.
+
+testPathLocationsEqualPathLength() - Tests that the path length is equal to the number of path locations. The coordinates of each path tile are stored, so we want to ensure the number of coordinate pairs equals the number of path tiles we expect to have. For Milestone 4
+
+testFinalBossNotSpawned() - Tests that the program does not believe the final boss is spawned at the start. The variable storing whether or not a boss has been spawned should not start with true, otherwise a final boss will never spawn. For Milestone 6
+
+testPathLocations() - Tests that there is at least 1 path location. The path needs to be at least one tile long, so this test ensures there is at least one pair of coordinates. For Milestone 4
+
+testPathLength() - Tests that the path is at least of length 1. The path needs to be at least one tile long, so this test checks that condition. For Milestone 4
+
+testEnemyTotalDamageAtStart() - Tests that enemies start with 0 damage. Enemies should not spawn in with any damage. For Milestone 5
+
+testCombatControllerFinalBossTime() - Tests that the combat controller stores the time at which to create the final boss. The combat controller handles the game's time to see if the final boss should be spawned. For Milestone 6
+
+testCombatControllerHandlesFinalBoss() - Tests that the combat controller attempts to create the final boss when enough time has elapsed. The combat controller handles the game's time to see if the final boss should be spawned, so at the right time, the final boss should be spawned. For Milestone 6

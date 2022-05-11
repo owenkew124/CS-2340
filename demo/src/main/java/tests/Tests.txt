@@ -1,0 +1,9 @@
+Testing Process
+
+testPlayerName() - Tests that a name solely with spaces or blank is not valid according to our name checking method. Milestone 2 requires that names that are empty or all spaces not be accepted by the system.
+
+testFireTowerVariedPrices()/testIceTowerVariedPrices()/testPaperTowerVariedPrices()/testRockTowerVariedPrices() - Tests that the prices of towers vary by difficulty. Milestone 3 requires that towers are different prices in each difficulty. While the code is similar currently, if there is to be a modification to the game such that each tower has distinct prices from the others, then these tests would have to be completely separate.
+
+testVariedMonumentHealth() - Tests that the health of the monument varies depending on game difficulty. Milestone 2 requires that the monument health should vary be difficulty.
+
+testVariedStartingMoney() - Tests that the starting money varies depending on game difficulty. Milestone 2 requires that the amount of starting money should vary by difficulty.

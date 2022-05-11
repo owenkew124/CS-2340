@@ -1,0 +1,21 @@
+Testing Process
+
+testPushTower() - testPushTower() checks if when a tower is created and is added to the tower array, it increments the total number of towers by 1. The game uses multiple towers so this test would be perfect to check if there were any errors or mistakes.
+
+testCheckEndGame() -  This test checks if the end game checker does not incorrectly close the game. Milestone 4 requires that we have an end when the monument health reaches zero.
+
+testPauseCombat() - This test checks if the combat pauses while the combat is going on. This test is good because we might need to pause the game to analyze the different types of strategies required for the game. So this test would be ideal.
+
+testStopCombat() - The goal of this test is to check if stopCombat() properly stops combat. This test is ideal if we want to restart combat or if something went wrong in the combat we could stop it immediately and try something else different.
+
+testMaximumTowers() - The test testMaximumTowers() checks if the total number of towers on the map does not exceed the threshold for the number of towers in the game. This is so that the towers do not overpopulate the game and make it a unfair ratio, towers to enemies.
+
+testMaximumEnemies() - The test testMaximumEnemies() checks if the total number of enemies on the map does not exceed the threshold for the number of enemies in the game. This is so that the enemies to towers ratio is not messed up and atleast makes the game challenging.
+
+testSetupCombatController() - The point of this test is to check if the combat controller of the game establishes the controller with the appropriate values. Milestone 4 requires that the combat section of the game is setup properly.
+
+testTowersArrayLengthEqualsMaximumTowers()  -  This test tests that the length of the array of towers is equal to the maximum number of towers allowed. This test is so that the towers do not exceed the maximum limit and might cause the game to crash.
+
+testEnemiesArrayLengthEqualsMaximumTowers() - This test tests that the length of the array of enemies is equal to the maximum number of enemies allowed. This test is so that enemies do not exceed the maximum limit and might cause the game to crash.
+
+testCurrentPurchase()  - The test testCurrentPurchase() checks if the game does not move to purchase screen when components are loaded. This test is useful to make sure the game runs properly and displays the right screen. If it does not display the right screen the game will not function properly.
